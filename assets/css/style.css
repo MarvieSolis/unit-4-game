@@ -17,7 +17,7 @@ body, html {
 }
 
 #instructions {
-    background-color: #222;
+    background-color: black;
     padding: 20px 0px 20px 0px;
     border: 5px;
     border-style: groove;
@@ -27,7 +27,7 @@ body, html {
 }
 
 .container {
-    background-color: #222;
+    background-color: black;
     padding: 20px 0px 20px 0px;
     border: 2px;
     border-style: solid;
@@ -46,7 +46,15 @@ h1, h2, h3 {
     font-family: 'Do Hyeon', sans-serif;
 }
 
+input {
+    transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
 
 input:hover {
     opacity:0.3;
+}
+
+input:active {
+    opacity: 1;
 }
