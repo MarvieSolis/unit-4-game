@@ -1,0 +1,52 @@
+
+body, html {
+    height: 100%;
+    background-image: url("https://images6.alphacoders.com/569/569693.png");
+    background-attachment: fixed;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}       
+
+#header {
+    background-color: black;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+    border: 5px;
+    border-style: groove;
+    border-color: purple;
+}
+
+#instructions {
+    background-color: #222;
+    padding: 20px 0px 20px 0px;
+    border: 5px;
+    border-style: groove;
+    color: white;
+    border-color: darkmagenta;
+    font-style: oblique;
+}
+
+.container {
+    background-color: #222;
+    padding: 20px 0px 20px 0px;
+    border: 2px;
+    border-style: solid;
+    font-family: 'Dosis', sans-serif;
+    color: white;
+    border-color: purple;
+    border-radius: 5%;
+    opacity: 0.8;
+}
+
+#stones {
+    background-color: BLACK;
+}
+
+h1, h2, h3 {
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+
+input:hover {
+    opacity:0.3;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en-us"></html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Avengers Infinity War: Part 3</title>
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Dosis" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container" id="header">
+        <div class="row">
+            <div class="col-md-12">
+                <img src="./assets/images/head.PNG" width="1080px">
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="instructions">
+        <div class="row">
+            <div class="col-md-5 offset-md-2">
+                <p>You will be given a random number at the start of the game.</p>
+                <p>There are six infinity stones below. By clicking on one of the stones, you will add a specific amount of points to your total score.</p>
+                <p>You will win if your total score can match the random number. You will lose if your total score goes above.</p>
+                <p>The value of each stone is hidden until you click them</p>
+                <p>Each time the game starts, the value of the crystals will change</p>
+                <p>Are YOU worthy enough to handle the infinity stones?</p>
+            </div>
+            <div class="col-md-3">
+                <img src="./assets/images/gauntlet.png" height="200px">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 offset-md-2" id="random">
+                <h2 id="randomnumber">RANDOM NUMBER</h2>
+            </div>
+            <div class="col-md-2" id="WL">
+                <p id="wins">Wins: 0</p>
+                <p id="losses">Losses: 0</p>
+            </div>
+            <div class="col-md-2" id="music">
+                    <audio controls>
+                            <source src="./assets/audio/avengers_audio.mp3" type="audio/mpeg" autoplay="true">
+                    </audio>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="stones">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <input type="image" id="stone1" height="150px" src="./assets/images/stone1.PNG"/>
+                <input type="image" id="stone2" height="150px" src="./assets/images/stone2.PNG"/>
+                <input type="image" id="stone3" height="150px" src="./assets/images/stone3.PNG"/>
+                <input type="image" id="stone4" height="150px" src="./assets/images/stone4.PNG"/>
+                <input type="image" id="stone5" height="150px" src="./assets/images/stone5.PNG"/>
+                <input type="image" id="stone6" height="150px" src="./assets/images/stone6.PNG"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 offset-md-2">
+                <h2>TOTAL SCORE:</h2>
+            </div>
+            <div class="col-md-3">
+                <div class="col-md-3">
+                    <h3 id="totalscore">0</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/javascript/game.js"></script>
+
+</body>
