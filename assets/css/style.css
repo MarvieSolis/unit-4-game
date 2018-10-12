@@ -58,3 +58,7 @@ input:hover {
 input:active {
     opacity: 1;
 }
+
+#time {
+    color: red;
+}
