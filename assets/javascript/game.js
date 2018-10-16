@@ -15,6 +15,7 @@ const gameStart = () => {
     totalScore = 0;
     randomNumber = Math.floor(Math.random()*120)+12;
     document.querySelector("#randomnumber").innerHTML = randomNumber;
+    document.querySelector("#totalscore").innerHTML = totalScore;
 
     // Randomly generates a number for a stone and pushes it if it doesnt exist in the array
     const generate = () => {
@@ -63,6 +64,10 @@ $(document).ready(function() {
 
     $("#instructionsBtn").on("click", function() {
         alert("Click each stone to increase your score and match the red number! Don't go over!");
+    });
+
+    $("#resetBtn").on("click", function() {
+        gameStart();
     });
 
 
