@@ -33,7 +33,7 @@ const test = () => {
     if (randomNumber < totalScore) {
         losses++;
         document.querySelector("#losses").innerHTML = "Losses: " + losses;
-        alert("You were spared by Thanos");
+        alert("You were killed by Thanos");
         document.querySelector("#totalscore").innerHTML = 0;
         gameStart();
     }
@@ -41,7 +41,7 @@ const test = () => {
     if (randomNumber === totalScore) {
         wins++;
         document.querySelector("#wins").innerHTML = "Wins: " + wins;
-        alert("You were killed by Thanos");
+        alert("You were spared by Thanos");
         document.querySelector("#totalscore").innerHTML = 0;
         gameStart();
     }
@@ -60,6 +60,10 @@ gameStart();
 // OnClick functions Functions
 
 $(document).ready(function() {
+
+    $("#instructionsBtn").on("click", function() {
+        alert("Click each stone to increase your score and match the red number! Don't go over!");
+    });
 
 
     $("#stone1").on("click", function() {
