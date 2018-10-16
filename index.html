@@ -16,32 +16,72 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <!--Bootstrap CDN-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
 
+
     <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Dosis" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Roboto" rel="stylesheet">
 
     <!--FontAwesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
 
 </head>
 
 <body>
 
     <div class="container-fluid" id="navbar">
-        <span id="navbarLeft">
+        <div class="navSection" id="navbarLeft">
             <img src="./assets/images/gauntlet.png" height="100px">
-        </span>
+        </div>
 
-        <span id="navbarMid">
+        <div class="navSection" id="navbarMid">
             <h6 id="title">Infinity Stone Collector</h6>
-        </span>
+        </div>
 
-        <span id="navbarRight">
-            <i class="fas fa-sync-alt"></i>
-        </span>
+        <div class="navSection" id="navbarRight">
+            <a id="resetBtn"><i class="fas fa-sync-alt"></i></a>
+        </div>
     </div>
+
+    <div class="container-fluid" id="scorebar">
+        <div id="scorebarLeft">
+            <p id="wins">Wins: 0</p>
+        </div>
+        <div id="scorebarRight">
+            <p id="losses">Losses: 0</p>
+        </div>
+    </div>
+
+    <div class="container" id="scoreBoard">
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <h5 class="score" id="totalscore">0</h5>
+                <h5 class="score" id="slash"> / </h5>
+                <h5 class="score" id="randomnumber"></h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="stoneBoard">
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <input type="image" id="stone1" height="280px" src="./assets/images/stone1.PNG" />
+                <input type="image" id="stone2" height="280px" src="./assets/images/stone2.PNG" />
+                <input type="image" id="stone3" height="280px" src="./assets/images/stone3.PNG" />
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <input type="image" id="stone4" height="280px" src="./assets/images/stone4.PNG" />
+                <input type="image" id="stone5" height="280px" src="./assets/images/stone5.PNG" />
+                <input type="image" id="stone6" height="280px" src="./assets/images/stone6.PNG" />
+            </div>
+        </div>
+    </div>
+
+
 
     <!-- <div class="container" id="header">
         <div class="row">
@@ -59,7 +99,6 @@
                 <p>You will win if your total score can match the random number. You will lose if your total score goes above.</p>
                 <p>The value of each stone is hidden until you click them</p>
                 <p>Each time the game starts, the value of the crystals will change</p>
-                <p>Are YOU worthy enough to handle the infinity stones?</p>
             </div>
             <div class="col-md-3">
                 <img src="./assets/images/gauntlet.png" height="250px">

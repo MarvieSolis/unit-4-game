@@ -33,7 +33,7 @@ const test = () => {
     if (randomNumber < totalScore) {
         losses++;
         document.querySelector("#losses").innerHTML = "Losses: " + losses;
-        alert("You are not worthy...");
+        alert("You were spared by Thanos");
         document.querySelector("#totalscore").innerHTML = 0;
         gameStart();
     }
@@ -41,7 +41,7 @@ const test = () => {
     if (randomNumber === totalScore) {
         wins++;
         document.querySelector("#wins").innerHTML = "Wins: " + wins;
-        alert("You are a god amongst us all");
+        alert("You were killed by Thanos");
         document.querySelector("#totalscore").innerHTML = 0;
         gameStart();
     }
